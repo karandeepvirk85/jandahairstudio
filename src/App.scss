@@ -1,0 +1,445 @@
+// CSS
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+// CONSTANTS
+$body-color:#e4e4e4;
+$primary-color:#e2b80a;
+$secondary-color:#ffffff;
+$dark-color:#333333;
+$primary-font: 'Roboto',sans-serif;
+$secondary-font: 'Open Sans',sans-serif;
+$logo-font:'Roboto',sans-serif;
+$heading-color:#e2b80a;
+$testimonial-bg:#333333;
+$gallery-bg:#333333;
+// Body
+body {
+    background-color: $body-color;
+    font-family: $secondary-font;
+}
+
+.container-fluid{
+    overflow: hidden;
+    padding: 0!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    background-color: #e4e4e4!important;
+    .navbar{
+        position: fixed;
+        width: 100%;
+        padding: 4px 10px;
+        border-bottom: 1px solid #c7c7c7;
+        z-index: 9999;
+        box-shadow: 0px 2px 16px -4px #00000069;
+        background-color: #e4e4e4eb !important;
+        a{
+            &.navbar-brand{
+                font-weight: 700;
+            }
+            font-size: 0.9rem;
+            color: rgba(0, 0, 0, 0.77)!important;
+            img{
+                width: 40px;
+            }
+        }
+    }
+    
+    .carousel {
+        padding: 0%;
+        .carousel-control-prev {
+            opacity: 1;
+        }
+        .carousel-control-next {
+            opacity: 1;
+        }
+    }
+    .services {
+        padding: 40px 4% 60px 4%;
+        @media only screen and (max-width: 768px){
+            padding: 0px 4% 60px 4%;
+        }
+        background-color: $dark-color;
+        max-width: 100%;
+        width: 100%;
+        h3 {
+            &.services-label {
+                text-align: center;
+                text-transform: uppercase;
+                color: #e4e4e4;
+                font-weight: 700;
+                margin-top: 10px;
+            }
+        }
+        h1 {
+            color: $primary-color;
+            font-size: 3rem;
+            @media only screen and (max-width: 768px){
+                font-size: 2rem;
+            }
+            text-transform: uppercase;
+            font-weight: 900;
+            text-align: left;
+            margin-bottom: 60px;
+            @media only screen and (max-width: 768px){
+                margin-bottom: 40px;
+            }
+            padding: 0;
+        }
+        .services-image {
+            background-size: cover;
+            height: 380px;
+            border-radius: 30%;
+            span {
+                font-size: 1.5rem;
+                background: #e2b80a;
+                padding: 1rem;
+                font-weight: 700;
+                color: #ffffff;
+            }
+        }
+    }
+    .about {
+            width: calc(100% + 30px);
+            max-width: calc(100% + 30px);
+            background-color:#e4e4e4;
+            margin-left: -15px;
+            padding-bottom: 60px;
+            @media only screen and (max-width: 768px){
+                padding-bottom: 40px;
+            }
+        h1 {
+            color: $heading-color;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-align: left;
+            margin-bottom: 30px;
+            padding: 60px 4% 0px 4%;
+            @media only screen and (max-width: 768px){
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+        h2 {
+            color: $dark-color;
+            font-size: 2rem;
+            font-weight: normal;
+            font-family: $secondary-font;
+            padding: 0 4%;
+            text-align: left;
+            @media only screen and (max-width: 768px){
+                font-size: 1.5rem;
+                text-align: conter
+            }
+        }
+        h3 {
+            color: $dark-color;
+            font-size: 2rem;
+            font-weight: normal;
+            padding: 0 4%;
+        }
+        p {
+            padding: 10px 4%;
+            font-size: 1rem;
+            @media only screen and (max-width: 768px){
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .testimonials {
+        background: $testimonial-bg;
+        padding: 40px 15%;
+        @media only screen and (max-width: 768px){
+            padding: 40px 4%;
+        }
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-align: left;
+            color: white;
+            margin-bottom: 40px;
+            @media only screen and (max-width: 768px){
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+        .carousel {
+            .carousel-inner {
+                min-height: auto;
+                text-align: center;
+                max-height: initial!important;
+                img {
+                    width: 14rem!important;
+                    border-radius: 50%;
+                    margin: auto;
+                    position: relative;
+                    top: -7rem;
+                }
+                .carousel-item {
+                    background-color: #222222;
+                    padding: 0;
+                    .upper-row {
+                        background-color: $primary-color;
+                        height: 200px;
+                    }
+                    .bottom-row {
+                        position: relative;
+                        top: -5rem;
+                        h2 {
+                            color: #ededed;
+                            font-weight: 700;
+                        }
+                        p {
+                            color: white;
+                            padding: 2%;
+                        }
+                        hr {
+                            border-color: #383838;
+                            position: relative;
+                            top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .team {
+        padding: 40px 15% 80px 15%;
+        @media only screen and (max-width: 768px){
+            padding: 40px 6% 20px 6%;
+        }
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        background-color: $body-color;
+        img {
+            border: 10px solid $dark-color;
+        }
+        h1 {
+            color: $dark-color;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 40px;
+            padding: 0;
+            text-align: right;
+            @media only screen and (max-width: 768px){
+                text-align: center;
+                font-size: 2.5rem;
+            }
+        }
+        h2 {
+            text-align: right;
+            font-weight: 700;
+            color: $dark-color;
+            font-size: 2.5rem;
+            @media only screen and (max-width: 768px){
+                font-size: 1.5rem;
+            }
+            letter-spacing: 2px;
+        }
+    }
+    .gallery {
+        background-color: #333333;
+        padding: 40px 15%;
+        @media only screen and (max-width: 768px){
+            padding: 40px 4%;
+        }
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        .image-gallery-swipe {
+            box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+            background-color: #222222;
+        }
+        h1 {
+            color: #e2b80a;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 40px;
+            padding: 0;
+            text-align: right;
+            @media only screen and (max-width: 768px){
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+    }
+    .social {
+        background-color: $body-color;
+        padding: 40px 18% 80px 18%;
+        @media only screen and (max-width: 768px){
+            padding: 40px 0% 20px 0%;
+        }
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        h1 {
+            color: black;
+            font-size: 3rem;
+            @media only screen and (max-width: 768px){
+                font-size: 2rem;
+            }
+            text-transform: uppercase;
+            font-weight: 900;
+            text-align: left;
+            padding: 0;
+            text-align: center;
+        }
+        .fb-row{
+            margin-top: 30px;;
+        }
+        .insta-row{
+            margin-top: 20px;;
+        }
+    }
+    .contact {
+        background-color: #333333;
+        padding: 40px 18% 80px 18%;
+        @media only screen and (max-width: 768px){
+            padding: 40px 0% 20px 0%;
+        }
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        .alert-success{
+            margin-top: 20px;
+        }
+        .col-md-12{
+            form{
+                padding: 2rem;
+                border: 1px solid white;
+                label{
+                    color: #ededed;
+                }
+                button{
+                    border: 1px solid white;
+                    background-color: transparent;
+                }
+            }
+        }
+        h1 {
+            color:#ffffff;
+            font-size: 3rem;
+            @media only screen and (max-width: 768px){
+                font-size: 2rem;
+            }
+            text-transform: uppercase;
+            font-weight: 900;
+            text-align: left;
+            margin-bottom: 40px;
+            padding: 0;
+            text-align: center;
+        }
+        .fb-row{
+            margin-top: 30px;;
+        }
+        .insta-row{
+            margin-top: 20px;;
+        }
+    }
+    .video{
+        background-color:#333333;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        max-width: calc(100% + 30px);
+        video{
+            width: 100%!important;
+        }
+    }
+    .footer {
+        background-color:#333333;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        max-width: calc(100% + 30px);
+        .middle-row{
+            .footer-col {
+                overflow: hidden;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                svg{
+                    color: gray;
+                    font-size: 1rem;
+                }
+                a{
+                    color:#e4e4e4;
+                }
+                .footer-links{
+                    a{
+                        margin:0 4px;
+                        svg{
+                            color:$primary-color;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                @media only screen and (max-width: 768px){
+                    height: auto;
+                    display: block;
+                    text-align: center;
+                    padding: 0px 0 10px 0;
+                }
+                img{
+                    &.footer-image{
+                        width:100%;
+                    }
+                    width: 120px;
+                    @media only screen and (max-width: 768px){
+                        text-align: center;
+                    }
+                }
+                h1 {
+                    text-align: center;
+                    padding: 10px 00px 0px 0px;
+                    font-size: 1.3rem;
+                    color:#e4e4e4;
+                }
+                p{
+                    margin:0;
+                    color:#e4e4e4;
+                    text-align: center;
+                }
+            }
+            h2 {
+                text-align: center;
+                padding: 0px 20px;
+            }
+        }
+        .bottom-row {
+            height: 20px;
+            @media only screen and (max-width: 768px){
+                height: auto;
+                text-align: center;
+                display:block;
+            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #333333;
+            p{
+                margin:0;
+                padding:0;
+                color: #929292;
+                font-size: 11px;
+                a{
+                    color: #ededed;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+   .hidden-xs{
+        display: none;
+    }
+}
